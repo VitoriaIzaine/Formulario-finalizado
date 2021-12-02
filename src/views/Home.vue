@@ -6,7 +6,7 @@
       </div>
       <div class="form">
         <div class="titulo1">
-          <h1>1. {{this.questions[0].topic}}</h1>
+          <h1>1. {{ this.questions[0].topic }}</h1>
         </div>
         <main class="pergunta1">
           <section class="right-1">
@@ -50,7 +50,7 @@
                   <input
                     type="radio"
                     id="three"
-                    value="Three"
+                    value="four"
                     v-model="picked"
                   />
                   <label for="three">Regular</label>
@@ -58,7 +58,7 @@
                   <input
                     type="radio"
                     id="three"
-                    value="Three"
+                    value="five"
                     v-model="picked"
                   />
                   <label for="three">Ruim</label>
@@ -82,13 +82,13 @@
             <div class="pg1">
               <h6 id="txUm">Nível de importância:</h6>
               <div class="rbt_importancia" id="v-model-radiobutton">
-                <input type="radio" id="one" value="One" v-model="picked" />
+                <input type="radio" id="um" value="um" v-model="picked" />
                 <label for="one">Alta</label>
                 <br />
-                <input type="radio" id="two" value="Two" v-model="picked" />
+                <input type="radio" id="dois" value="dois" v-model="picked" />
                 <label for="two">Media</label>
                 <br />
-                <input type="radio" id="three" value="Three" v-model="picked" />
+                <input type="radio" id="tres" value="tres" v-model="picked" />
                 <label for="three">Baixa</label>
               </div>
             </div>
@@ -107,10 +107,10 @@
                   />
                   <label for="one">Otimo</label>
                   <br />
-                  <input type="radio" id="bom" value="bom" v-model="picked" />
+                  <input type="radio" id="bom" value="um" v-model="picked" />
                   <label for="two">Bom</label>
                   <br />
-                  <input type="radio" id="nda" value="nda" v-model="picked" />
+                  <input type="radio" id="nda" value="dois" v-model="picked" />
                   <label for="three">Não se aplica</label>
                   <br />
                 </div>
@@ -119,12 +119,17 @@
                   <input
                     type="radio"
                     id="regular"
-                    value="regular"
+                    value="tres"
                     v-model="picked"
                   />
-                  <label for="three">Regular</label>
+                  <label for="tres">Regular</label>
                   <br />
-                  <input type="radio" id="ruim" value="ruim" v-model="picked" />
+                  <input
+                    type="radio"
+                    id="ruim"
+                    value="quatro"
+                    v-model="picked"
+                  />
                   <label for="three">Ruim</label>
                 </div>
               </div>
@@ -146,13 +151,13 @@
             <div class="pg1">
               <h6 id="txUm">Nível de importância:</h6>
               <div class="rbt_importancia" id="v-model-radiobutton">
-                <input type="radio" id="one" value="One" v-model="picked" />
+                <input type="radio" id="one" value="a" v-model="picked" />
                 <label for="one">Alta</label>
                 <br />
-                <input type="radio" id="two" value="Two" v-model="picked" />
+                <input type="radio" id="two" value="b" v-model="picked" />
                 <label for="two">Media</label>
                 <br />
-                <input type="radio" id="three" value="Three" v-model="picked" />
+                <input type="radio" id="three" value="c" v-model="picked" />
                 <label for="three">Baixa</label>
               </div>
             </div>
@@ -166,15 +171,15 @@
                   <input
                     type="radio"
                     id="otimo"
-                    value="otimo"
+                    value="a"
                     v-model="picked"
                   />
                   <label for="one">Otimo</label>
                   <br />
-                  <input type="radio" id="bom" value="bom" v-model="picked" />
+                  <input type="radio" id="bom" value="b" v-model="picked" />
                   <label for="two">Bom</label>
                   <br />
-                  <input type="radio" id="nda" value="nda" v-model="picked" />
+                  <input type="radio" id="nda" value="c" v-model="picked" />
                   <label for="three">Não se aplica</label>
                   <br />
                 </div>
@@ -183,12 +188,12 @@
                   <input
                     type="radio"
                     id="regular"
-                    value="regular"
+                    value="d"
                     v-model="picked"
                   />
                   <label for="three">Regular</label>
                   <br />
-                  <input type="radio" id="ruim" value="ruim" v-model="picked" />
+                  <input type="radio" id="ruim" value="e" v-model="picked" />
                   <label for="three">Ruim</label>
                 </div>
               </div>
@@ -207,13 +212,13 @@
             <div class="pg1">
               <h6 id="txUm">Nível de importância:</h6>
               <div class="rbt_importancia" id="v-model-radiobutton">
-                <input type="radio" id="one" value="One" v-model="picked" />
+                <input type="radio" id="one" value="f" v-model="picked" />
                 <label for="one">Alta</label>
                 <br />
-                <input type="radio" id="two" value="Two" v-model="picked" />
+                <input type="radio" id="two" value="g" v-model="picked" />
                 <label for="two">Media</label>
                 <br />
-                <input type="radio" id="three" value="Three" v-model="picked" />
+                <input type="radio" id="three" value="h" v-model="picked" />
                 <label for="three">Baixa</label>
               </div>
             </div>
@@ -223,19 +228,19 @@
             <div class="pg1">
               <h6 id="txdois">Nível de satisfação:</h6>
               <div class="rbt_satis" id="v-model-radiobutton">
-                <div class="ruim">
+                <div class="i">
                   <input
                     type="radio"
                     id="otimo"
-                    value="otimo"
+                    value="j"
                     v-model="picked"
                   />
                   <label for="one">Otimo</label>
                   <br />
-                  <input type="radio" id="bom" value="bom" v-model="picked" />
+                  <input type="radio" id="bom" value="k" v-model="picked" />
                   <label for="two">Bom</label>
                   <br />
-                  <input type="radio" id="nda" value="nda" v-model="picked" />
+                  <input type="radio" id="nda" value="l" v-model="picked" />
                   <label for="three">Não se aplica</label>
                   <br />
                 </div>
@@ -249,7 +254,7 @@
                   />
                   <label for="three">Regular</label>
                   <br />
-                  <input type="radio" id="ruim" value="ruim" v-model="picked" />
+                  <input type="radio" id="ruim" value="m" v-model="picked" />
                   <label for="three">Ruim</label>
                 </div>
               </div>
@@ -863,8 +868,8 @@ export default {
       picked: "",
 
       questions: [
-        {"topic": "Limpeza e conservação da sala de aula e da oficina" }
-      ]
+        { topic: "Limpeza e conservação da sala de aula e da oficina" },
+      ],
     };
   },
 };
